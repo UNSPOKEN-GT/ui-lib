@@ -2556,7 +2556,7 @@ function DiscordLib:Window(text)
 				CurrentSelectedText.Position = UDim2.new(0.0178571437, 0, 0, 0)
 				CurrentSelectedText.Size = UDim2.new(0, 193, 0, 32)
 				CurrentSelectedText.Font = Enum.Font.Gotham
-				CurrentSelectedText.Text = (list[1] and #list > 0) or "..."
+				CurrentSelectedText.Text = (#list > 0 and list[1]) or "..."
 				CurrentSelectedText.TextColor3 = Color3.fromRGB(212, 212, 212)
 				CurrentSelectedText.TextSize = 14.000
 				CurrentSelectedText.TextXAlignment = Enum.TextXAlignment.Left
@@ -2736,7 +2736,7 @@ function DiscordLib:Window(text)
 						end
 					end						
 
-					CurrentSelectedText.Text = (list[1] and #list > 0) or "..."
+					CurrentSelectedText.Text = (#list > 0 and list[1]) or "..."
 
 					itemcount = 0
 					framesize = 0
