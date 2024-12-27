@@ -2235,7 +2235,7 @@ function DiscordLib:Window(text)
 				Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
 				Icon.ImageColor3 = Color3.fromRGB(114, 118, 125)
 				
-				if default == false then
+				if default == true then
 					TweenService:Create(
 						Icon,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
