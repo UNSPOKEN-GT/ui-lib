@@ -2736,7 +2736,7 @@ function DiscordLib:Window(text)
 						end
 					end						
 
-					CurrentSelectedText.Text = "..."
+					CurrentSelectedText.Text = autoselect
 
 					itemcount = 0
 					framesize = 0
