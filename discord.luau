@@ -82,8 +82,9 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Discord = Instance.new("ScreenGui")
+
 Discord.Name = "Discord"
-Discord.Parent = game.CoreGui
+Discord.Parent = gethui()
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function DiscordLib:Window(text)
@@ -3296,4 +3297,4 @@ function DiscordLib:Window(text)
 	end
 	return ServerHold
 end
-return DiscordLib
+return DiscordLib, Discord
