@@ -2492,7 +2492,7 @@ function DiscordLib:Window(text)
 				Seperator2.Size = UDim2.new(0, 401, 0, 1)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			function ChannelContent:Dropdown(text, autoselect, list, callback)
+			function ChannelContent:Dropdown(text, list, callback)
 				local DropFunc = {}
 				local itemcount = 0
 				local framesize = 0
@@ -2556,7 +2556,7 @@ function DiscordLib:Window(text)
 				CurrentSelectedText.Position = UDim2.new(0.0178571437, 0, 0, 0)
 				CurrentSelectedText.Size = UDim2.new(0, 193, 0, 32)
 				CurrentSelectedText.Font = Enum.Font.Gotham
-				CurrentSelectedText.Text = "..." or autoselect
+				CurrentSelectedText.Text = list[1] or "..."
 				CurrentSelectedText.TextColor3 = Color3.fromRGB(212, 212, 212)
 				CurrentSelectedText.TextSize = 14.000
 				CurrentSelectedText.TextXAlignment = Enum.TextXAlignment.Left
@@ -2736,7 +2736,7 @@ function DiscordLib:Window(text)
 						end
 					end						
 
-					CurrentSelectedText.Text = autoselect
+					CurrentSelectedText.Text = list[1] or "..."
 
 					itemcount = 0
 					framesize = 0
